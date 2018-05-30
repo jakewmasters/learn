@@ -35,9 +35,20 @@ func add(x int, y int) int {
 	return x + y
 }
 
+func naked_return(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
+}
+
 func main() {
 	print_time()
 	print_types()
 	print_math()
 	fmt.Println(add(42, 13))
+	fmt.Println(naked_return(24))
+	var z string
+	z = "Hello" // declaration first, then initialization
+	w := "world" // both at once -> short assignment
+	fmt.Printf("%s, %s!\n", z, w)
 }
