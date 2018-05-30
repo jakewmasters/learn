@@ -11,3 +11,10 @@ To run the sample Go program:
 ```
 $ go run example.go
 ```
+
+To build an actual executable (on Windows): 
+```
+$ go build example.go
+```
+
+This will produce an executable called `example.go`. 
